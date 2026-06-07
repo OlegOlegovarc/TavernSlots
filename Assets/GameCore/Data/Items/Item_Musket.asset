@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beca99e69311a194aa1bcbd5341e78d4, type: 3}
+  m_Name: Item_Musket
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.Data.ItemDefinition
+  id: musket
+  displayName: Musket
+  description: Deals physical damage to the opponent before the spin.
+  icon: {fileID: 0}
+  worldPrefab: {fileID: 0}
+  acquireCost: 8
+  activationCost: 4
+  usePolicy: 0
+  activationWindow: 0
+  maxUpgradeLevel: 10
+  upgradeCostCurve: {fileID: 11400000, guid: f3037e4f2906b47418988a09905c310f, type: 2}
+  effects:
+  - effectType: 40
+    target: 1
+    baseValue: 5
+    valueCurve: {fileID: 11400000, guid: f3037e4f2906b47418988a09905c310f, type: 2}
+    damageType: 0
+    statusId: empty
+    statusDuration: 1
+  canAppearInOffers: 1
+  isUnlockedByDefault: 1
+  isRare: 0

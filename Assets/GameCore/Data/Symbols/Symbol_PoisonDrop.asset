@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fa4ef7eb7d35f94ab1f91c0a04c51f0, type: 3}
+  m_Name: Symbol_PoisonDrop
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.Data.SymbolDefinition
+  id: poison_drop
+  displayName: Poison Drop
+  description: Applies poison to the opponent.
+  icon: {fileID: 0}
+  diceFaceIcon: {fileID: 0}
+  maxUpgradeLevel: 10
+  upgradeCostCurve: {fileID: 11400000, guid: 70f55106a46cfd747a94af6614c24c45, type: 2}
+  effects:
+  - effectType: 30
+    target: 1
+    baseValue: 2
+    valueCurve: {fileID: 11400000, guid: 70f55106a46cfd747a94af6614c24c45, type: 2}
+    damageType: 2
+    statusId: poison
+    statusDuration: 2
+  canAppearInOffers: 1
+  isUnlockedByDefault: 1

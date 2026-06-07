@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fa4ef7eb7d35f94ab1f91c0a04c51f0, type: 3}
+  m_Name: Symbol_Blade
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.Data.SymbolDefinition
+  id: blade
+  displayName: Blade
+  description: Deals physical damage to the opponent.
+  icon: {fileID: 0}
+  diceFaceIcon: {fileID: 0}
+  maxUpgradeLevel: 10
+  upgradeCostCurve: {fileID: 11400000, guid: 6bdcf7ceca4944c4cb9cc8e45937c52e, type: 2}
+  effects:
+  - effectType: 40
+    target: 1
+    baseValue: 2
+    valueCurve: {fileID: 11400000, guid: 6bdcf7ceca4944c4cb9cc8e45937c52e, type: 2}
+    damageType: 0
+    statusId: empty
+    statusDuration: 1
+  canAppearInOffers: 1
+  isUnlockedByDefault: 1

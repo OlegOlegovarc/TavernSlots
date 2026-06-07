@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beca99e69311a194aa1bcbd5341e78d4, type: 3}
+  m_Name: Item_HealthPotion
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.Data.ItemDefinition
+  id: health_potion
+  displayName: Health Potion
+  description: Restores health before the spin.
+  icon: {fileID: 0}
+  worldPrefab: {fileID: 0}
+  acquireCost: 6
+  activationCost: 3
+  usePolicy: 0
+  activationWindow: 0
+  maxUpgradeLevel: 10
+  upgradeCostCurve: {fileID: 11400000, guid: ecebbfeb9293de84596a6ffe6f54c00e, type: 2}
+  effects:
+  - effectType: 50
+    target: 0
+    baseValue: 10
+    valueCurve: {fileID: 11400000, guid: ecebbfeb9293de84596a6ffe6f54c00e, type: 2}
+    damageType: 2
+    statusId: empty
+    statusDuration: 1
+  canAppearInOffers: 1
+  isUnlockedByDefault: 1
+  isRare: 0
