@@ -75,6 +75,7 @@ namespace SlotsTavern.Runtime
             if (incomingDamage <= 0)
                 return 0;
 
+            int healthBeforeDamage = currentHealth;
             int remainingDamage = incomingDamage;
 
             switch (damageType)
@@ -95,7 +96,8 @@ namespace SlotsTavern.Runtime
             if (remainingDamage > 0)
                 currentHealth = Mathf.Max(0, currentHealth - remainingDamage);
 
-            return remainingDamage;
+            int actualHealthDamage = healthBeforeDamage - currentHealth;
+            return actualHealthDamage;
         }
 
         public void ClearTemporaryShields()
