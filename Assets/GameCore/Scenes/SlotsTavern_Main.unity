@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.07386969, g: 0.14716049, b: 0.18867922, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: f17cbcb3229954975ab0818845a2c17f, type: 2}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -26366,6 +26366,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 883136985}
+  - component: {fileID: 883136986}
   m_Layer: 0
   m_Name: SpinManager
   m_TagString: Untagged
@@ -26388,6 +26389,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1543052147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &883136986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883136984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 131da21abac3ff740aa2380dc1472f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.Managers.SpinManager
+  useRandomSeed: 1
+  fixedSeed: 12345
 --- !u!4 &883483477 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ee02017687025204395cc297a5510962, type: 3}
@@ -56328,6 +56343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2031727517}
+  - component: {fileID: 2031727518}
   m_Layer: 0
   m_Name: GroupResolver
   m_TagString: Untagged
@@ -56350,6 +56366,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1543052147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2031727518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031727516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e139aa6e6ea62fb4db56f2301f191ff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.Managers.GroupResolver
 --- !u!4 &2031987698 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e7ac9e8fe480b6547bb34cb9a10245be, type: 3}
