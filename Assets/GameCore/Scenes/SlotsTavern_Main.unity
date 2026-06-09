@@ -1289,6 +1289,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 04ba31e9b31048247b9569fddf7c7f79, type: 3}
   m_PrefabInstance: {fileID: 952580110}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &49905178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 49905179}
+  - component: {fileID: 49905180}
+  m_Layer: 0
+  m_Name: StatusManagerDebugTester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &49905179
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49905178}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543052147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &49905180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49905178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c9d9c64ac35e2a4d98d58fdec1f7bbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.DebugTools.StatusManagerDebugTester
+  statusManager: {fileID: 1221497035}
+  runOnStart: 0
+  processTwoTicks: 1
+  targetPlayerId: bot
+  targetHealth: 6
+  targetShieldCapacity: 0
+  targetOtherShield: 0
+  poisonPower: 7
+  poisonDuration: 2
 --- !u!4 &53221078 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 04ba31e9b31048247b9569fddf7c7f79, type: 3}
@@ -36253,6 +36306,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1221497034}
+  - component: {fileID: 1221497035}
   m_Layer: 0
   m_Name: StatusManager
   m_TagString: Untagged
@@ -36275,6 +36329,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1543052147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1221497035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221497033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d704270ccd3581948b54684b6cd1ac8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.Managers.StatusManager
+  poisonStatusId: poison
+  poisonDamageType: 2
 --- !u!1 &1226019340
 GameObject:
   m_ObjectHideFlags: 0
@@ -45752,6 +45820,7 @@ Transform:
   - {fileID: 1499816923}
   - {fileID: 282212316}
   - {fileID: 106386624}
+  - {fileID: 49905179}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1543324321 stripped
