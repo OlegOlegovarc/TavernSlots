@@ -2562,6 +2562,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f245115acb4f1cf4c834199079034963, type: 3}
   m_PrefabInstance: {fileID: 104535177}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &106386623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 106386624}
+  - component: {fileID: 106386625}
+  m_Layer: 0
+  m_Name: FullTurnDebugTester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &106386624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106386623}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543052147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &106386625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106386623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de50bc9dd06ed546880a6a2daae3d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.DebugTools.FullTurnDebugTester
+  spinManager: {fileID: 883136986}
+  groupResolver: {fileID: 2031727518}
+  resolveManager: {fileID: 1243399783}
+  effectApplier: {fileID: 1499816922}
+  runOnStart: 0
+  actingPlayerId: player
+  opponentPlayerId: bot
+  slotCount: 5
+  playerHealth: 30
+  playerShieldCapacity: 30
+  playerStartCrystals: 0
+  botHealth: 30
+  botShieldCapacity: 30
+  botStartCrystals: 0
+  allSymbolUpgradeLevel: 0
+  playerSymbolPool:
+  - blade
+  - shield
+  - ore
+  - poison_drop
 --- !u!1001 &109569314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8045,6 +8109,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e7ac9e8fe480b6547bb34cb9a10245be, type: 3}
   m_PrefabInstance: {fileID: 308925864}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &282212315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 282212316}
+  - component: {fileID: 282212317}
+  m_Layer: 0
+  m_Name: EffectApplierDebugTester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &282212316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282212315}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543052147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &282212317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282212315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05b08d87ce1ea54db25be2a4bf48664, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.DebugTools.EffectApplierDebugTester
+  effectApplier: {fileID: 1499816922}
+  runOnStart: 0
+  playerAId: player
+  playerAHealth: 30
+  playerAShieldCapacity: 20
+  playerAStartCrystals: 0
+  playerBId: bot
+  playerBHealth: 30
+  playerBShieldCapacity: 20
+  playerBStartCrystals: 0
 --- !u!1 &283450777
 GameObject:
   m_ObjectHideFlags: 0
@@ -14930,6 +15048,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f245115acb4f1cf4c834199079034963, type: 3}
   m_PrefabInstance: {fileID: 497766873}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &501312066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 501312067}
+  - component: {fileID: 501312068}
+  m_Layer: 0
+  m_Name: SpinDebugTester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &501312067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501312066}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543052147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &501312068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501312066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbaeb0659ecf71d43bb0817788d2cbd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.DebugTools.SpinDebugTester
+  spinManager: {fileID: 883136986}
+  groupResolver: {fileID: 2031727518}
+  runOnStart: 0
+  actingPlayerId: player
+  slotCount: 5
+  symbolPoolIds:
+  - blade
+  - shield
+  - ore
+  - poison_drop
 --- !u!1 &502556050
 GameObject:
   m_ObjectHideFlags: 0
@@ -16386,6 +16558,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b15f5f75da153b54dbbfd20b2350d974, type: 3}
   m_PrefabInstance: {fileID: 2122396860}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &565125220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 565125221}
+  - component: {fileID: 565125222}
+  m_Layer: 0
+  m_Name: ResolveDebugTester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &565125221
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565125220}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543052147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &565125222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565125220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464854ba2cba3ef43b473d9551ec6893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.DebugTools.ResolveDebugTester
+  spinManager: {fileID: 883136986}
+  groupResolver: {fileID: 2031727518}
+  resolveManager: {fileID: 1243399783}
+  runOnStart: 0
+  actingPlayerId: player
+  opponentPlayerId: bot
+  slotCount: 5
+  allSymbolUpgradeLevel: 5
+  symbolPoolIds:
+  - blade
+  - shield
+  - ore
+  - poison_drop
 --- !u!4 &573032686 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b15f5f75da153b54dbbfd20b2350d974, type: 3}
@@ -36381,6 +36610,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1243399782}
+  - component: {fileID: 1243399783}
   m_Layer: 0
   m_Name: ResolveManager
   m_TagString: Untagged
@@ -36403,6 +36633,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1543052147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1243399783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243399781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a50c4964e1ccc946be5a479bea813d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.Managers.ResolveManager
+  symbolDefinitions:
+  - {fileID: 11400000, guid: 7299db5c83e56614fb47c42f374ba721, type: 2}
+  - {fileID: 11400000, guid: 74d77aa55dc1d49468bc4309306ea562, type: 2}
+  - {fileID: 11400000, guid: e27f4538748b62a40a6c71f2ab257014, type: 2}
+  - {fileID: 11400000, guid: 010e8e64390e90742b482cafed016d61, type: 2}
 --- !u!4 &1243560769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b15f5f75da153b54dbbfd20b2350d974, type: 3}
@@ -44061,6 +44308,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e7ac9e8fe480b6547bb34cb9a10245be, type: 3}
   m_PrefabInstance: {fileID: 1261942870}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1499816921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1499816923}
+  - component: {fileID: 1499816922}
+  m_Layer: 0
+  m_Name: EffectApplier
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1499816922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499816921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ecb7479a0181048b02296788b6af46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.Managers.EffectApplier
+--- !u!4 &1499816923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499816921}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543052147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1500475773
 GameObject:
   m_ObjectHideFlags: 0
@@ -45456,6 +45747,11 @@ Transform:
   - {fileID: 893274063}
   - {fileID: 1739739647}
   - {fileID: 1308632078}
+  - {fileID: 501312067}
+  - {fileID: 565125221}
+  - {fileID: 1499816923}
+  - {fileID: 282212316}
+  - {fileID: 106386624}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1543324321 stripped
