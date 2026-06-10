@@ -7929,6 +7929,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &262198969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 262198971}
+  - component: {fileID: 262198970}
+  m_Layer: 0
+  m_Name: ItemUseManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &262198970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262198969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecd7a6eadc509d24da67c86486a83bb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.Managers.ItemUseManager
+  turnActionValidator: {fileID: 833764979}
+  itemDefinitions:
+  - {fileID: 11400000, guid: 1058322dc804b524c83847d118e79722, type: 2}
+  - {fileID: 11400000, guid: 1179118253781fa46af44607d173aa7d, type: 2}
+  - {fileID: 11400000, guid: 00263c52f7a9e1247be2b6b3279eea29, type: 2}
+  - {fileID: 11400000, guid: 03e7f35df38f3ae4aaa41d48bbda6285, type: 2}
+--- !u!4 &262198971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262198969}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543052147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &265021194 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4e9998ee773eb7c42804d07cbae624a8, type: 3}
@@ -15016,6 +15066,62 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4e9998ee773eb7c42804d07cbae624a8, type: 3}
   m_PrefabInstance: {fileID: 1487847175}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &485325671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 485325672}
+  - component: {fileID: 485325673}
+  m_Layer: 0
+  m_Name: ItemUseManagerDebugTester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &485325672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485325671}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543052147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &485325673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485325671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91d1b3af95aa6464daf0b56e786c15af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.DebugTools.ItemUseManagerDebugTester
+  itemUseManager: {fileID: 262198970}
+  effectApplier: {fileID: 1499816922}
+  runOnStart: 0
+  playerId: player
+  botId: bot
+  itemId: musket
+  playerHealth: 30
+  playerShieldCapacity: 20
+  playerStartCrystals: 0
+  botHealth: 30
+  botShieldCapacity: 20
+  applyEffectsAfterUse: 1
 --- !u!4 &486745719 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1324bde57913ce448ab1ddb60b63c4a8, type: 3}
@@ -45614,6 +45720,8 @@ Transform:
   - {fileID: 1717318568}
   - {fileID: 833764980}
   - {fileID: 784333604}
+  - {fileID: 262198971}
+  - {fileID: 485325672}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1543324321 stripped
