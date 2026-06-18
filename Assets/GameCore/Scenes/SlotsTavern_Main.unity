@@ -34679,6 +34679,69 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147149996}
   m_Mesh: {fileID: -3292925553009838691, guid: 0acf6804bf12b90468b2902b38fe977d, type: 3}
+--- !u!1 &1148451006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1148451007}
+  - component: {fileID: 1148451008}
+  m_Layer: 0
+  m_Name: TurnHandoffDebugTester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1148451007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148451006}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543052147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1148451008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148451006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa49f3631341a94b8c189af056a2b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.DebugTools.TurnHandoffDebugTester
+  turnManager: {fileID: 609542110}
+  matchConfig: {fileID: 11400000, guid: 603a535cac7d912409ca0d557541a4ba, type: 2}
+  runOnStart: 0
+  playerId: player
+  playerHealth: 30
+  playerShieldCapacity: 20
+  playerPhysicalShield: 8
+  playerRoundWins: 1
+  usedItemThisTurn: musket
+  botId: bot
+  botHealth: 3
+  botShieldCapacity: 20
+  botPhysicalShield: 5
+  botMagicalShield: 3
+  botOtherShield: 2
+  botRoundWins: 0
+  addPoisonToBot: 1
+  poisonPower: 4
+  poisonDuration: 2
 --- !u!1001 &1155201352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45389,6 +45452,7 @@ Transform:
   - {fileID: 485325672}
   - {fileID: 1559171876}
   - {fileID: 1634385920}
+  - {fileID: 1148451007}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1543324321 stripped
