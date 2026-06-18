@@ -8,16 +8,25 @@ namespace SlotsTavern.Data
     public class RoundConfig : ScriptableObject
     {
         [Header("Round")]
+        [Min(1)]
         public int roundIndex = 1;
 
         [Header("Slots")]
+        [Min(1)]
         public int slotCount = 3;
 
-        [Header("Health")]
+        [Header("Player Base Stats")]
+        [Min(1)]
         public int playerBaseHealth = 30;
 
+        [Min(0)]
+        public int playerBaseShieldCapacity = 20;
+
         [Header("Bot Timing")]
+        [Min(0f)]
         public float botThinkDelayMin = 1f;
+
+        [Min(0f)]
         public float botThinkDelayMax = 2f;
     }
 }

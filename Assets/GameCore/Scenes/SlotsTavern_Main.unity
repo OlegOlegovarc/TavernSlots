@@ -8266,6 +8266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 283450778}
+  - component: {fileID: 283450779}
   m_Layer: 0
   m_Name: RoundManager
   m_TagString: Untagged
@@ -8288,6 +8289,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1543052147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &283450779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283450777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 822a8b0a28f46c44b95c990626fffed8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.Managers.RoundManager
+  upgradeManager: {fileID: 1286197036}
+  turnManager: {fileID: 609542110}
 --- !u!1001 &284330396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37248,6 +37263,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1286197035}
+  - component: {fileID: 1286197036}
   m_Layer: 0
   m_Name: UpgradeManager
   m_TagString: Untagged
@@ -37270,6 +37286,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1543052147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1286197036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286197034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414449b050a28c34e9f11dc12fe03422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.Managers.UpgradeManager
+  maxHealthBonusCurve: {fileID: 11400000, guid: 5cfd279f50bc44f4484551b60f4418ae, type: 2}
+  shieldCapacityBonusCurve: {fileID: 11400000, guid: 1675097995026a04298ca5b6dcca01df, type: 2}
 --- !u!4 &1288680589 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 04ba31e9b31048247b9569fddf7c7f79, type: 3}
@@ -45453,6 +45483,7 @@ Transform:
   - {fileID: 1559171876}
   - {fileID: 1634385920}
   - {fileID: 1148451007}
+  - {fileID: 1940908274}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1543324321 stripped
@@ -53789,6 +53820,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f47a56ec49cb4654889d5af23ff8b6c4, type: 3}
   m_PrefabInstance: {fileID: 118792622}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1940908273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1940908274}
+  - component: {fileID: 1940908275}
+  m_Layer: 0
+  m_Name: RoundManagerDebugTester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1940908274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940908273}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543052147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1940908275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940908273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4472c9fa30b6a7479b2fead956624eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.DebugTools.RoundManagerDebugTester
+  roundManager: {fileID: 283450779}
+  matchConfig: {fileID: 11400000, guid: 603a535cac7d912409ca0d557541a4ba, type: 2}
+  playerId: player
+  botId: bot
+  playerHealthUpgradeLevel: 1
+  playerShieldUpgradeLevel: 1
+  botHealthUpgradeLevel: 2
+  botShieldUpgradeLevel: 2
+  firstPlayerId: player
+  runOnStart: 0
 --- !u!1001 &1941126755
 PrefabInstance:
   m_ObjectHideFlags: 0

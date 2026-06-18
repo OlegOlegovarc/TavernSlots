@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 661b068bc83405b44ab68a42ec40eee3, type: 3}
+  m_Name: Curve_Player_ShieldCapacityBonus
+  m_EditorClassIdentifier: Assembly-CSharp::SlotsTavern.Data.UpgradeCurve
+  valuesByLevel: 000000000300000006000000090000000c0000000f0000001200000015000000180000001b0000001e000000
+  upgradeCostsByCurrentLevel: 05000000070000000a0000000d0000001000000014000000180000001d000000230000002a000000
